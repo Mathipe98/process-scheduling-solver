@@ -8,7 +8,7 @@ export const rr = (
   const processesInfo = arrivalTime
     .map((item, index) => {
       return {
-        job: (index + 10).toString(36).toUpperCase(),
+        job: `P${index+1}`, //(index + 10).toString(36).toUpperCase(),
         at: item,
         bt: burstTime[index],
       };
